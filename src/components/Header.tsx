@@ -35,9 +35,11 @@ export default function Header() {
       <div className="section-container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2" aria-label="Peter Field Technologies Home">
-          <div className="w-8 h-8 rounded-lg cta-gradient flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-sm">PF</span>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="Peter Field Technologies Logo" 
+            className="w-10 h-10 object-contain"
+          />
           <div className="font-heading font-bold text-lg leading-tight">
             <span className={scrolled ? 'text-foreground' : 'text-primary-foreground'}>
               Peter Field

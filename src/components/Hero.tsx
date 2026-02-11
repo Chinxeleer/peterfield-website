@@ -1,14 +1,17 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Shield } from 'lucide-react';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { Button } from "@/components/ui/button";
+import heroBg from "@/assets/products/hero-bg.jpg";
+import { ArrowRight, Shield } from "lucide-react";
 
 export default function Hero() {
   const particlesRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (prefersReducedMotion) return;
 
     // Animate hero content
@@ -18,7 +21,7 @@ export default function Hero() {
         opacity: 0,
         duration: 1,
         stagger: 0.15,
-        ease: 'power3.out',
+        ease: "power3.out",
       });
     });
 
@@ -33,7 +36,7 @@ export default function Hero() {
           duration: `random(8, 16)`,
           repeat: -1,
           yoyo: true,
-          ease: 'sine.inOut',
+          ease: "sine.inOut",
           delay: i * 0.5,
         });
       });
@@ -43,9 +46,24 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center hero-gradient overflow-hidden"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{ background: "var(--hero-gradient)", opacity: 0.85 }}
+      />
       {/* Floating particles */}
-      <div ref={particlesRef} className="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div
+        ref={particlesRef}
+        className="absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+      >
         {Array.from({ length: 12 }).map((_, i) => (
           <div
             key={i}
@@ -55,11 +73,12 @@ export default function Hero() {
               height: `${Math.random() * 120 + 40}px`,
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              background: i % 3 === 0
-                ? 'hsl(262 58% 52%)'
-                : i % 3 === 1
-                ? 'hsl(25 95% 53%)'
-                : 'hsl(262 58% 72%)',
+              background:
+                i % 3 === 0
+                  ? "hsl(262 58% 52%)"
+                  : i % 3 === 1
+                    ? "hsl(25 95% 53%)"
+                    : "hsl(262 58% 72%)",
             }}
           />
         ))}
@@ -75,12 +94,13 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.1] text-primary-foreground mb-6">
-            Enterprise IT Solutions That Keep Zimbabwe's Businesses{' '}
+            Enterprise IT Solutions That Keep Zimbabwe's Businesses{" "}
             <span className="text-accent">Running</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mb-10 leading-relaxed">
-            Trusted network equipment and IT infrastructure since 2014. Authorized dealer for the world's leading technology brands.
+            Trusted network equipment and IT infrastructure since 2014.
+            Authorized dealer for the world's leading technology brands.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -88,7 +108,11 @@ export default function Hero() {
               variant="accent"
               size="lg"
               className="text-base px-8 py-6"
-              onClick={() => document.querySelector('#products')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .querySelector("#products")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View Our Products
               <ArrowRight className="w-4 h-4 ml-1" />
@@ -97,27 +121,14 @@ export default function Hero() {
               variant="hero-outline"
               size="lg"
               className="text-base px-8 py-6"
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Get In Touch
             </Button>
-          </div>
-
-          <div className="mt-12 flex items-center gap-8 text-primary-foreground/60 text-sm">
-            <div>
-              <span className="block text-2xl font-heading font-bold text-primary-foreground">10+</span>
-              Years Experience
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/20" />
-            <div>
-              <span className="block text-2xl font-heading font-bold text-primary-foreground">8+</span>
-              Global Partners
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/20" />
-            <div>
-              <span className="block text-2xl font-heading font-bold text-primary-foreground">100+</span>
-              Clients Served
-            </div>
           </div>
         </div>
       </div>

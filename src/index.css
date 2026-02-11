@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -49,11 +49,30 @@
     --brand-purple: 262 58% 52%;
     --brand-purple-light: 262 58% 96%;
     --brand-purple-dark: 262 58% 38%;
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(263, 53%, 15%) 0%,
+      hsl(263, 53%, 30%) 50%,
+      hsl(280, 40%, 20%) 100%
+    );
     --brand-orange: 25 95% 53%;
     --brand-orange-light: 25 95% 95%;
-    --brand-gradient: linear-gradient(135deg, hsl(262 58% 52%), hsl(262 58% 38%));
-    --brand-gradient-accent: linear-gradient(135deg, hsl(262 58% 52%), hsl(25 95% 53%));
-    --brand-gradient-hero: linear-gradient(160deg, hsl(262 58% 12%) 0%, hsl(262 58% 22%) 50%, hsl(262 40% 18%) 100%);
+    --brand-gradient: linear-gradient(
+      135deg,
+      hsl(262 58% 52%),
+      hsl(262 58% 38%)
+    );
+    --brand-gradient-accent: linear-gradient(
+      135deg,
+      hsl(262 58% 52%),
+      hsl(25 95% 53%)
+    );
+    --brand-gradient-hero: linear-gradient(
+      160deg,
+      hsl(262 58% 12%) 0%,
+      hsl(262 58% 22%) 50%,
+      hsl(262 40% 18%) 100%
+    );
     --shadow-card: 0 4px 24px -4px hsl(262 58% 52% / 0.08);
     --shadow-card-hover: 0 12px 40px -8px hsl(262 58% 52% / 0.15);
     --shadow-elevated: 0 20px 60px -12px hsl(262 58% 52% / 0.2);
@@ -95,7 +114,12 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold tracking-tight;
   }
 }
