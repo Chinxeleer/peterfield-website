@@ -15,7 +15,7 @@ export default function CTASection() {
 
       <div className="section-container relative z-10 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-6 max-w-3xl mx-auto leading-tight">
-          Ready to Upgrade Your IT Infrastructure?
+          Ready to Upgrade Your IT Infrastructure ?
         </h2>
         <p className="text-primary-foreground/70 text-lg max-w-xl mx-auto mb-10">
           Get a tailored solution for your business. Our team is ready to help you find the right equipment and support.

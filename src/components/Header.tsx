@@ -38,11 +38,11 @@ export default function Header() {
           <img 
             src="/logo.png" 
             alt="Peter Field Technologies Logo" 
-            className="w-10 h-10 object-contain"
+            className="w-20 h-20 object-contain"
           />
-          <div className="font-heading font-bold text-lg leading-tight">
+          <div className="font-heading font-bold text-xl leading-tight">
             <span className={scrolled ? 'text-foreground' : 'text-primary-foreground'}>
-              Peter Field
+              <span className='text-purple-600'>PETER</span><span className='text-orange-400'>FIELD</span>
             </span>
             <span className={`block text-xs font-medium ${scrolled ? 'text-muted-foreground' : 'text-primary-foreground/70'}`}>
               Technologies

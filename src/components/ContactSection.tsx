@@ -49,7 +49,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="font-heading font-bold text-foreground mb-1">Phone</h3>
                 <p className="text-muted-foreground">
-                  <a href="tel:+26342257145" className="hover:text-primary transition-colors">+263 4 2257145</a><br />
+                  <a href="tel:+26342257145" className="hover:text-primary transition-colors">+263 242 257 145</a><br />
                   <a href="tel:+263773818428" className="hover:text-primary transition-colors">+263 773 818 428</a>
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default function ContactSection() {
               <h3 className="font-heading font-bold text-foreground mb-2">Business Hours</h3>
               <p className="text-muted-foreground text-sm">
                 Monday – Friday: 8:00 AM – 5:00 PM<br />
-                Saturday: 8:00 AM – 1:00 PM<br />
+                Saturday: Closed<br />
                 Sunday: Closed
               </p>
             </div>

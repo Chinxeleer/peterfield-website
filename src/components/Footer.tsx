@@ -51,7 +51,7 @@ export default function Footer() {
             <h4 className="font-heading font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/60">
               <li>7 Beal Road, Belvedere, Harare</li>
-              <li><a href="tel:+26342257145" className="hover:text-accent transition-colors">+263 4 2257145</a></li>
+              <li><a href="tel:+263242257145" className="hover:text-accent transition-colors">+263 242 257 145</a></li>
               <li><a href="tel:+263773818428" className="hover:text-accent transition-colors">+263 773 818 428</a></li>
               <li><a href="mailto:sales@peterfield.co.zw" className="hover:text-accent transition-colors">sales@peterfield.co.zw</a></li>
             </ul>

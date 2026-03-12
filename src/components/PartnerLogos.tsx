@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const partners = [
-  'Emerson', 'APC', 'Eaton', 'EXFO', 'Lenovo', 'Huawei', 'HP', 'Cisco',
+  'emerson', 'apc', 'eaton', 'exfo', 'lenovo', 'huawei', 'hp', 'cisco',
 ];
 
 export default function PartnerLogos() {
@@ -23,9 +23,7 @@ export default function PartnerLogos() {
               key={partner}
               className="partner-item bg-card border border-border rounded-xl p-6 md:p-8 flex items-center justify-center hover:border-primary/30 hover:scale-105 transition-all duration-300 cursor-default"
             >
-              <span className="font-heading font-bold text-xl md:text-2xl text-foreground/60 hover:text-primary transition-colors duration-300">
-                {partner}
-              </span>
+              <img src={`/company_logos/${partner}.png`} alt={partner} className="transition-colors duration-300" />
             </div>
           ))}
         </div>

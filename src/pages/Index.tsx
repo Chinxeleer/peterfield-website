@@ -36,7 +36,6 @@ const Index = () => {
     <main>
       <Header />
       <Hero />
-      <ClientLogos />
       <ValuePropositions />
       <ProductsShowcase />
       <WhyChooseUs />

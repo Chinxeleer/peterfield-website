@@ -1,0 +1,9 @@
+fly.toml
+.git
+.gitignore
+dist
+node_modules
+.DS_Store
+*.log
+.vscode
+.idea

@@ -3,17 +3,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const team = [
   {
     name: "Phidias Kodze",
-    title: "Managing Director",
-    bio: "With qualifications in accounting and business management, Robert founded Peter Field Technologies in 2014 to bridge the gap between global IT brands and Zimbabwean enterprise.",
-  },
-  {
-    name: "Oliver Mtengwa",
-    title: "Operations Director",
-    bio: "Holding an IT Diploma with 4+ years of banking and technology experience, Godwin ensures seamless delivery and technical excellence across all operations.",
+    title: "Technical Director",
+    bio: "With qualifications in accounting and business management, Phidias founded Peter Field Technologies in 2014 to bridge the gap between global IT brands and Zimbabwean enterprise.",
   },
   {
     name: "Godwin Bhinzi",
-    title: "Operations Director",
+    title: "Managing Director",
     bio: "Holding an IT Diploma with 4+ years of banking and technology experience, Godwin ensures seamless delivery and technical excellence across all operations.",
   },
   {
