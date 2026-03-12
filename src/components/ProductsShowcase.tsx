@@ -11,10 +11,10 @@ import consumablesImg from '@/assets/products/it-consumables.jpg';
 
 const products = [
   { name: 'Network Equipment', benefit: 'Routers, switches, and structured cabling for reliable connectivity', image: networkImg },
-  { name: 'Enterprise Servers', benefit: 'High-performance servers for mission-critical workloads', image: serverImg },
+  { name: 'Enterprise Servers', benefit: 'High performance servers for mission critical workloads', image: serverImg },
   { name: 'UPS & Power Solutions', benefit: 'Uninterrupted power for continuous business operations', image: upsImg },
-  { name: 'Business Laptops', benefit: 'Enterprise-grade workstations built for productivity', image: laptopImg },
-  { name: 'Enterprise Printers', benefit: 'High-volume printing solutions for demanding offices', image: printerImg },
+  { name: 'Business Laptops', benefit: 'Enterprise grade workstations built for productivity', image: laptopImg },
+  { name: 'Enterprise Printers', benefit: 'High volume printing solutions for demanding offices', image: printerImg },
   { name: 'IT Consumables', benefit: 'Toner, cables, storage, and essential accessories', image: consumablesImg },
 ];
 

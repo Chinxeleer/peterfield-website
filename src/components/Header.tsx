@@ -34,11 +34,11 @@ export default function Header() {
     >
       <div className="section-container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2" aria-label="Peter Field Technologies Home">
+        <a href="#home" className="flex items-center" aria-label="Peter Field Technologies Home">
           <img 
             src="/logo.png" 
             alt="Peter Field Technologies Logo" 
-            className="w-20 h-20 object-contain"
+            className="w-20 h-20 object-contain py-2"
           />
           <div className="font-heading font-bold text-xl leading-tight">
             <span className={scrolled ? 'text-foreground' : 'text-primary-foreground'}>
