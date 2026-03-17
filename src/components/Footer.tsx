@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-1 mb-4 mt-2">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
                 <img
                   src="/logo.png"
@@ -26,7 +26,6 @@ export default function Footer() {
                 />
               </div>
               <span className="font-heading font-bold text-xl">
-                {" "}
                 <span className="text-purple-600">PETER</span>
                 <span className="text-orange-400">FIELD</span> Technologies
               </span>
