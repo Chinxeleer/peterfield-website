@@ -1,14 +1,14 @@
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Products', href: '#products' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Partners', href: '#partners' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Home", href: "#home" },
+  { label: "Products", href: "#products" },
+  { label: "About Us", href: "#about" },
+  { label: "Partners", href: "#partners" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Footer() {
   const handleClick = (href: string) => {
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -18,15 +18,26 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg cta-gradient flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-sm">PF</span>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="Peter Field Technologies Logo"
+                  className="w-20 h-20 object-contain py-2"
+                />
               </div>
-              <span className="font-heading font-bold text-lg">Peter Field Technologies</span>
+              <span className="font-heading font-bold text-xl">
+                {" "}
+                <span className="text-purple-600">PETER</span>
+                <span className="text-orange-400">FIELD</span> Technologies
+              </span>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-              Enterprise IT solutions and network equipment for Zimbabwe's leading organizations. Business Without Boundaries.
+              Enterprise IT solutions and network equipment for Zimbabwe's
+              leading organizations. Business Without Boundaries.
             </p>
-            <p className="text-primary-foreground/40 text-xs">Established 2014 · Harare, Zimbabwe</p>
+            <p className="text-primary-foreground/40 text-xs">
+              Established 2014 · Harare, Zimbabwe
+            </p>
           </div>
 
           {/* Links */}
@@ -51,9 +62,30 @@ export default function Footer() {
             <h4 className="font-heading font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/60">
               <li>7 Beal Road, Belvedere, Harare</li>
-              <li><a href="tel:+263242257145" className="hover:text-accent transition-colors">+263 242 257 145</a></li>
-              <li><a href="tel:+263773818428" className="hover:text-accent transition-colors">+263 773 818 428</a></li>
-              <li><a href="mailto:sales@peterfield.co.zw" className="hover:text-accent transition-colors">sales@peterfield.co.zw</a></li>
+              <li>
+                <a
+                  href="tel:+263242257145"
+                  className="hover:text-accent transition-colors"
+                >
+                  +263 242 257 145
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+263773818428"
+                  className="hover:text-accent transition-colors"
+                >
+                  +263 773 818 428
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:sales@peterfield.co.zw"
+                  className="hover:text-accent transition-colors"
+                >
+                  sales@peterfield.co.zw
+                </a>
+              </li>
             </ul>
           </div>
         </div>
