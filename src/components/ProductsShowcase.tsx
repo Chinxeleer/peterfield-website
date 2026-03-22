@@ -10,6 +10,7 @@ import printerImg from "@/assets/products/enterprise-printers.jpg";
 import consumablesImg from "@/assets/products/it-consumables.jpg";
 import fibreImg from "@/assets/products/prods.png";
 import networkCabling from "@/assets/products/cabinets.png";
+import fujikuraSplice from "@/assets/products/fujikura-splice.png";
 
 const products = [
   {
@@ -53,6 +54,12 @@ const products = [
     name: "Structured Cabling Solutions",
     benefit: "Network Cabinet, Patch Cords, Patch Panels and Accessories",
     image: networkCabling,
+  },
+  {
+    name: "Fibre Splicing Equipment",
+    benefit:
+      "High-quality splice protection solutions for fibre optic networks",
+    image: fujikuraSplice,
   },
 ];
 
