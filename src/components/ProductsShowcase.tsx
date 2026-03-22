@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import networkImg from "@/assets/products/network-equipment.jpg";
 import serverImg from "@/assets/products/enterprise-servers.jpg";
 import upsImg from "@/assets/products/ups-power.jpg";
-import laptopImg from "@/assets/products/business-laptops.jpg";
+import laptopImg from "@/assets/products/business-laptops.png";
 import printerImg from "@/assets/products/enterprise-printers.jpg";
 import consumablesImg from "@/assets/products/it-consumables.jpg";
 import fibreImg from "@/assets/products/prods.png";

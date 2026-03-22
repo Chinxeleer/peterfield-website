@@ -69,7 +69,7 @@ export default function ContactSection() {
             <div className="p-6 bg-brand-purple-light rounded-xl border border-primary/10">
               <h3 className="font-heading font-bold text-foreground mb-2">Business Hours</h3>
               <p className="text-muted-foreground text-sm">
-                Monday – Friday: 8:00 AM – 5:00 PM<br />
+                Monday – Friday: 8:00 AM – 4:30 PM<br />
                 Saturday: Closed<br />
                 Sunday: Closed
               </p>
